@@ -21,7 +21,7 @@ services:
         value: cookie
       - key: ENV_SILENT
         scope: RUN_AND_BUILD_TIME
-        value: true
+        value: "true"
     github:
       branch: master
       deploy_on_push: true
