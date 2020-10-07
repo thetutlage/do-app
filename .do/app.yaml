@@ -11,14 +11,17 @@ services:
         scope: BUILD_TIME
         value: development
       - key: NODE_ENV
-        scope: RUNTIME_TIME
+        scope: RUN_TIME
         value: production
       - key: APP_KEY
-        scope: RUNTIME_TIME
+        scope: RUN_TIME
         value: D1lO0GV1iIggFmwOKKJYrW0JuLovo-jw
       - key: SESSION_DRIVER
-        scope: RUNTIME_TIME
+        scope: RUN_TIME
         value: cookie
+      - key: ENV_SILENT
+        scope: RUN_AND_BUILD_TIME
+        value: true
     github:
       branch: master
       deploy_on_push: true
